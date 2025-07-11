@@ -63,7 +63,7 @@ jobs:
       run: |
         if [[ -z "${{ github.event.inputs.build_dir }}" ]]; then
           git pull origin main
-        then
+        fi
       shell: bash
 
 
