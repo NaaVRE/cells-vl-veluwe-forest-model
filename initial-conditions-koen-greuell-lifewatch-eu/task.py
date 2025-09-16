@@ -17,8 +17,8 @@ id = args.id
 
 
 
-intial_stored_tree_mass = 1.
+intial_tree_mass = 1.
 
-file_intial_stored_tree_mass = open("/tmp/intial_stored_tree_mass_" + id + ".json", "w")
-file_intial_stored_tree_mass.write(json.dumps(intial_stored_tree_mass))
-file_intial_stored_tree_mass.close()
+file_intial_tree_mass = open("/tmp/intial_tree_mass_" + id + ".json", "w")
+file_intial_tree_mass.write(json.dumps(intial_tree_mass))
+file_intial_tree_mass.close()
