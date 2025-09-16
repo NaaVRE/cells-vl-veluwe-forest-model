@@ -34,9 +34,9 @@ TreeDensity = json.loads(args.TreeDensity)
 
 
 
-file_Abundance = open("/tmp/Abundance_" + id + ".json", "w")
-file_Abundance.write(json.dumps(Abundance))
-file_Abundance.close()
-file_Animal = open("/tmp/Animal_" + id + ".json", "w")
-file_Animal.write(json.dumps(Animal))
-file_Animal.close()
+file_Abundance_out = open("/tmp/Abundance_out_" + id + ".json", "w")
+file_Abundance_out.write(json.dumps(Abundance_out))
+file_Abundance_out.close()
+file_Animal_out = open("/tmp/Animal_out_" + id + ".json", "w")
+file_Animal_out.write(json.dumps(Animal_out))
+file_Animal_out.close()
