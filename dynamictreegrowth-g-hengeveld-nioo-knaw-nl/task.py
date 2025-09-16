@@ -14,9 +14,13 @@ arg_parser.add_argument('--Animal', action='store', type=str, required=True, des
 
 arg_parser.add_argument('--DBH', action='store', type=str, required=True, dest='DBH')
 
+arg_parser.add_argument('--precipitation', action='store', type=str, required=True, dest='precipitation')
+
 arg_parser.add_argument('--Soil', action='store', type=str, required=True, dest='Soil')
 
 arg_parser.add_argument('--Species', action='store', type=str, required=True, dest='Species')
+
+arg_parser.add_argument('--temperature', action='store', type=str, required=True, dest='temperature')
 
 arg_parser.add_argument('--TreeDensity', action='store', type=str, required=True, dest='TreeDensity')
 
@@ -29,8 +33,10 @@ id = args.id
 Abundance = json.loads(args.Abundance)
 Animal = json.loads(args.Animal)
 DBH = json.loads(args.DBH)
+precipitation = json.loads(args.precipitation)
 Soil = json.loads(args.Soil)
 Species = json.loads(args.Species)
+temperature = json.loads(args.temperature)
 TreeDensity = json.loads(args.TreeDensity)
 
 
