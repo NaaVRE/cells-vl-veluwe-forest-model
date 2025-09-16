@@ -8,6 +8,8 @@ arg_parser = argparse.ArgumentParser()
 arg_parser.add_argument('--id', action='store', type=str, required=True, dest='id')
 
 
+arg_parser.add_argument('--param_nitrogen_uptake_factor', action='store', type=float, required=True, dest='param_nitrogen_uptake_factor')
+arg_parser.add_argument('--param_soil_nitrogen_compounds_concentration', action='store', type=float, required=True, dest='param_soil_nitrogen_compounds_concentration')
 
 args = arg_parser.parse_args()
 print(args)
@@ -15,10 +17,12 @@ print(args)
 id = args.id
 
 
+param_nitrogen_uptake_factor = args.param_nitrogen_uptake_factor
+param_soil_nitrogen_compounds_concentration = args.param_soil_nitrogen_compounds_concentration
 
 
-nitrogen_uptake_factor = 1.
-soil_nitrogen_compounds_concentration = 1.
+nitrogen_uptake_factor = param_nitrogen_uptake_factor
+soil_nitrogen_compounds_concentration = param_soil_nitrogen_compounds_concentration
 
 file_nitrogen_uptake_factor = open("/tmp/nitrogen_uptake_factor_" + id + ".json", "w")
 file_nitrogen_uptake_factor.write(json.dumps(nitrogen_uptake_factor))
