@@ -22,12 +22,6 @@ location = args.location.replace('"','')
 
 
 
-file_DBH = open("/tmp/DBH_" + id + ".json", "w")
-file_DBH.write(json.dumps(DBH))
-file_DBH.close()
-file_Height = open("/tmp/Height_" + id + ".json", "w")
-file_Height.write(json.dumps(Height))
-file_Height.close()
 file_Plotnr = open("/tmp/Plotnr_" + id + ".json", "w")
 file_Plotnr.write(json.dumps(Plotnr))
 file_Plotnr.close()
